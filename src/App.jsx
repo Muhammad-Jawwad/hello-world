@@ -3,6 +3,10 @@ import Greet from './components/Greet';
 import Welcome from './components/Welcome';
 import Hello from './components/Hello';
 import GetGreeting from './components/GetGreeting';
+import Message from './components/Message';
+import Counter from './components/Counter';
+import ParentComponent from './components/ParentComponent';
+import LifecycleA from './components/LifecycleA';
 
 function App() {
   const user = {
@@ -11,6 +15,10 @@ function App() {
   };
   return (
     <div className="App">
+      <LifecycleA/>
+      <ParentComponent></ParentComponent>
+      <Counter/>
+      <Message/>
       <Greet name = "Abbas">
         <p>This is children props</p>
       </Greet>  
